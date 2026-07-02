@@ -11,7 +11,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'E-mail',
-    value: 'contato@governancamais.com.br',
+    value: 'governanca.govemais@outlook.com.br',
   },
   {
     icon: (
@@ -20,7 +20,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'WhatsApp',
-    value: '(00) 00000-0000',
+    value: '(67) 99676-3214',
   },
 ];
 
@@ -64,7 +64,7 @@ export default function ContactPageClient() {
           <div className="bg-brand-navy text-white rounded-2xl p-6">
             <h3 className="font-bold mb-2 text-sm">Precisa de uma proposta rápida?</h3>
             <p className="text-xs text-gray-300 leading-relaxed mb-4">
-              Preencha o formulário ao lado com o curso de interesse e retornaremos em até 24 horas úteis com uma proposta personalizada para seu município.
+              Preencha o formulário ao lado com o curso de interesse e retornaremos em até 24 horaé o "pas úteis com uma proposta personalizada para seu município.
             </p>
           </div>
         </div>
