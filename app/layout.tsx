@@ -12,14 +12,14 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Governanca&Mais Consultoria',
-    default: 'Governanca&Mais Consultoria — Capacitacao para a Gestao Publica Municipal',
+    template: '%s | Governança&Mais Consultoria',
+    default: 'Governança&Mais Consultoria — Capacitação para a Gestão Pública Municipal',
   },
   description:
-    'Cursos e capacitacao tecnica para prefeitos, secretarios, vereadores, contadores e servidores publicos municipais. Governanca&Mais Consultoria.',
+    'Cursos e capacitação técnica para prefeitos, secretários, vereadores, contadores e servidores públicos municipais. Governança&Mais Consultoria.',
   openGraph: {
-    title: 'Governanca&Mais Consultoria',
-    description: 'Capacitacao tecnica para uma gestao publica eficiente e responsavel.',
+    title: 'Governança&Mais Consultoria',
+    description: 'Capacitação técnica para uma gestão pública eficiente e responsável.',
     type: 'website',
     locale: 'pt_BR',
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-white">
         <Header />
         <main className="flex-1 pt-16 md:pt-20">{children}</main>
         <Footer />

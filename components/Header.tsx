@@ -32,8 +32,8 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled || menuOpen
-          ? 'bg-white shadow-md'
-          : 'bg-white/95 backdrop-blur-sm'
+          ? 'bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100'
+          : 'bg-white/70 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,15 +43,15 @@ export default function Header() {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8" aria-label="Navegação principal">
+          <nav className="hidden md:flex items-center gap-1" aria-label="Navegação principal">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-brand-accent ${
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                   pathname === link.href
-                    ? 'text-brand-accent border-b-2 border-brand-accent pb-0.5'
-                    : 'text-brand-dark'
+                    ? 'text-brand-accent bg-brand-soft'
+                    : 'text-brand-dark hover:text-brand-accent hover:bg-brand-light'
                 }`}
               >
                 {link.label}
@@ -59,7 +59,7 @@ export default function Header() {
             ))}
             <Link
               href="/contato"
-              className="ml-2 px-5 py-2 bg-brand-navy text-white text-sm font-semibold rounded hover:bg-brand-accent transition-colors"
+              className="ml-3 px-5 py-2.5 bg-brand-navy text-white text-sm font-semibold rounded-full shadow-sm hover:bg-brand-accent hover:shadow-md transition-all"
             >
               Solicitar proposta
             </Link>
@@ -109,7 +109,7 @@ export default function Header() {
           ))}
           <Link
             href="/contato"
-            className="mt-3 block text-center px-5 py-2.5 bg-brand-navy text-white text-sm font-semibold rounded hover:bg-brand-accent transition-colors"
+            className="mt-3 block text-center px-5 py-2.5 bg-brand-navy text-white text-sm font-semibold rounded-full hover:bg-brand-accent transition-colors"
           >
             Solicitar proposta
           </Link>

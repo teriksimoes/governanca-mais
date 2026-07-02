@@ -1,17 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-navy: #1B2A4A;
+  --color-brand-navy: #16233F;
   --color-brand-blue: #4A90C2;
-  --color-brand-accent: #3B7FC4;
-  --color-brand-dark: #2D2D2D;
-  --color-brand-light: #F5F7FA;
+  --color-brand-accent: #2E6FB8;
+  --color-brand-dark: #1F2937;
+  --color-brand-light: #F4F7FB;
+  --color-brand-soft: #EAF1FA;
   --font-sans: var(--font-inter), Arial, Helvetica, sans-serif;
 }
 
 :root {
   --background: #ffffff;
-  --foreground: #2D2D2D;
+  --foreground: #1F2937;
 }
 
 html {
@@ -25,6 +26,15 @@ body {
 }
 
 *:focus-visible {
-  outline: 2px solid #3B7FC4;
+  outline: 2px solid #2E6FB8;
   outline-offset: 2px;
+}
+
+.bg-grid-pattern {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.hero-glow {
+  background: radial-gradient(60% 60% at 50% 0%, rgba(74, 144, 194, 0.35) 0%, rgba(22, 35, 63, 0) 70%);
 }

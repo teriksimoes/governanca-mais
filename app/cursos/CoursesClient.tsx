@@ -25,7 +25,7 @@ export default function CoursesClient() {
       {/* Filters */}
       <div className="mb-10 space-y-5">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Filtrar por area</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Filtrar por área</p>
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => setActiveCategory(ALL)}
@@ -35,7 +35,7 @@ export default function CoursesClient() {
                   : 'border-gray-300 text-gray-600 hover:border-brand-navy hover:text-brand-navy'
               }`}
             >
-              Todas as areas
+              Todas as áreas
             </button>
             {categories.map(([key, label]) => (
               <button
@@ -54,7 +54,7 @@ export default function CoursesClient() {
         </div>
 
         <div>
-          <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Filtrar por publico</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Filtrar por público</p>
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => setActiveAudience(ALL)}
@@ -64,7 +64,7 @@ export default function CoursesClient() {
                   : 'border-gray-300 text-gray-600 hover:border-brand-accent hover:text-brand-accent'
               }`}
             >
-              Todos os publicos
+              Todos os públicos
             </button>
             {audiences.map(([key, label]) => (
               <button
@@ -90,7 +90,7 @@ export default function CoursesClient() {
 
       {/* Grid */}
       {filtered.length === 0 ? (
-        <div className="text-center py-20 text-gray-400">
+        <div className="text-center py-20 text-gray-400 bg-brand-light rounded-2xl">
           <p className="text-lg">Nenhum curso encontrado com os filtros selecionados.</p>
           <button
             onClick={() => { setActiveCategory(ALL); setActiveAudience(ALL); }}

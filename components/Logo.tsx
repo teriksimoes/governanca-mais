@@ -24,19 +24,19 @@ export default function Logo({ size = 'md', variant = 'full', className = '', in
       style={{ flexShrink: 0 }}
     >
       <polygon points="50,5 10,50 50,95" fill="#4A90C2" />
-      <polygon points="50,5 90,50 50,95" fill="#1B2A4A" />
+      <polygon points="50,5 90,50 50,95" fill="#16233F" />
     </svg>
   );
 
   if (variant === 'symbol-only') {
-    return <div className={className} aria-label="Governanca&Mais Consultoria">{Diamond}</div>;
+    return <div className={className} aria-label="Governança&Mais Consultoria">{Diamond}</div>;
   }
 
   return (
     <div
       className={`flex items-center ${className}`}
       style={{ gap: `${gap}px` }}
-      aria-label="Governanca&Mais Consultoria"
+      aria-label="Governança&Mais Consultoria"
     >
       {Diamond}
       <div className="flex flex-col leading-none">
@@ -44,7 +44,7 @@ export default function Logo({ size = 'md', variant = 'full', className = '', in
           className="font-extrabold tracking-tight"
           style={{
             fontSize: nameSize,
-            color: invertText ? '#ffffff' : '#2D2D2D',
+            color: invertText ? '#ffffff' : '#1F2937',
             lineHeight: 1.1,
           }}
         >

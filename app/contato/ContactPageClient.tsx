@@ -38,9 +38,9 @@ export default function ContactPageClient() {
         </div>
 
         {/* Sidebar */}
-        <div className="space-y-8">
+        <div className="space-y-6">
           <div>
-            <h2 className="text-xl font-bold text-brand-dark mb-4">Informacoes de contato</h2>
+            <h2 className="text-xl font-bold text-brand-dark mb-4">Informações de contato</h2>
             <div className="space-y-4">
               {contactInfo.map((item) => (
                 <div key={item.label} className="flex items-start gap-3">
@@ -54,17 +54,17 @@ export default function ContactPageClient() {
             </div>
           </div>
 
-          <div className="bg-brand-light rounded-lg p-6 border border-brand-navy/10">
+          <div className="bg-brand-light rounded-2xl p-6">
             <h3 className="font-bold text-brand-dark mb-2 text-sm">Atendemos todo o Brasil</h3>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Oferecemos cursos presenciais, online e no formato in-company para prefeituras, camaras municipais e orgaos publicos municipais de todo o territorio nacional.
+              Oferecemos cursos presenciais, online e no formato in-company para prefeituras, câmaras municipais e órgãos públicos municipais de todo o território nacional.
             </p>
           </div>
 
-          <div className="bg-brand-navy text-white rounded-lg p-6">
-            <h3 className="font-bold mb-2 text-sm">Precisa de uma proposta rapida?</h3>
+          <div className="bg-brand-navy text-white rounded-2xl p-6">
+            <h3 className="font-bold mb-2 text-sm">Precisa de uma proposta rápida?</h3>
             <p className="text-xs text-gray-300 leading-relaxed mb-4">
-              Preencha o formulario ao lado com o curso de interesse e retornaremos em ate 24 horas uteis com uma proposta personalizada para seu municipio.
+              Preencha o formulário ao lado com o curso de interesse e retornaremos em até 24 horas úteis com uma proposta personalizada para seu município.
             </p>
           </div>
         </div>

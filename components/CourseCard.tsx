@@ -18,7 +18,7 @@ interface CourseCardProps {
 
 export default function CourseCard({ course }: CourseCardProps) {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4 hover:shadow-md transition-shadow">
+    <div className="bg-white border border-gray-100 rounded-2xl p-6 flex flex-col gap-4 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
       <div className="flex flex-wrap gap-2">
         <span
           className={`inline-block px-2.5 py-0.5 rounded text-xs font-medium ${
@@ -56,7 +56,7 @@ export default function CourseCard({ course }: CourseCardProps) {
 
       <Link
         href={`/contato?curso=${course.slug}`}
-        className="mt-auto inline-block text-center px-4 py-2.5 bg-brand-navy text-white text-sm font-semibold rounded hover:bg-brand-accent transition-colors"
+        className="mt-auto inline-block text-center px-4 py-2.5 bg-brand-navy text-white text-sm font-semibold rounded-full hover:bg-brand-accent transition-colors"
       >
         Tenho interesse
       </Link>
